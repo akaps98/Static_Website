@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <a href="cv.html">Main Page</a>
+        <h1>This is my personal blog. All written articles were posted.</h1>
+        <img src="info.jpg" width="400" height="250" alt="information!">
+    </header><hr>
+    <div id="articles">
+        <article>
+            <h1>Web Server?</h1>
+            <h3>2022/01/29</h3>
+            <h4>by Jun Sik</h4>
+            <p>The definition of MDN for <em>Web Server</em> is as follows.</p>
+            <p>On the hardware side, a web server is a computer that stores website component files.<br>
+                (Component files include HTML documents, images, CSS stylesheets, and JavaScript files)<br>
+                and distribute these files to end-user devices. The web server is connected to the Internet<br>
+                and can be accessed through a domain name such as mozilla.org.<br>
+                On the software side, the web server basically manages how web users access host files.<br>
+                In this article, the web server is limited to HTTP servers.<br>
+                The HTTP server is part of the URL (Web addresses)<br>
+                and HTTP (the protocol your browser uses to display web pages).</p>
+        </article><hr>
+        <article>
+            <h1>DBMS (Database Magnagement System)</h1>
+            <h3>2022/02/11</h3>
+            <h4>by Jun Sik</h4>
+            <p>In the absence of DBMS, the database, or DB, was directly manipulated by users and applications (APPs).<br>
+                However, this will not only not guarantee the stability of the database,<br>
+                but will also increase the logic required to create applications.<br>
+                And the integrity of the data becomes difficult to keep. DBMS has emerged due to these problems.<br>
+                The DBMS is directly connected to the database and performs several tasks.<br>
+                In this process, applications or applications are linked to DBMS rather than databases<br>
+                to modify, delete, or generate data in the DB. Through this, we can grant 'authorities'<br>
+                and solve the difficulties of processing concurrent users.</p>
+        </article><hr>
+        <article>
+            <h1>Middleware</h1>
+            <h3>2022/02/18</h3>
+            <h4>by Jun Sik</h4>
+            <p>With the advent of DBMS, many things have been convenient.<br>
+                However, there were many disadvantages to the direct connection between the DBMS and the client.<br>
+                When the DBMS logic changed, the client had to modify them all,<br>
+                so there were problems with re-deployment of the client, and problems with security<br>
+                because the logic was included in the client and distributed. The concept that emerged due to this is "middleware."<br>
+                All business logic is handled by middleware.<br>
+                This makes it possible for the client to send a request to the server<br>
+                and display only the response of the server on the screen.<br>
+                That's why clients no longer need business logic.</p>
+        </article><hr>
+        <article>
+            <h1>WAS (Web Application Server)</h1>
+            <h3>2022/03/02</h3>
+            <h4>by Jun Sik</h4>
+            <p>WAS is one of the middleware mentioned above.<br>
+                Usually, web servers only provide static data.<br>
+                However, the need for dynamic work such as accessing and<br>
+                processing DBMS has increased, and WAS, which plays this role, has emerged.<br>
+                Usually, if you install only WAS, the web server functionality is built in,<br>
+                so it works well without any problems. However, in the field,<br>
+                the web server and WAS are separated.<br>
+                This is because if there is a problem with the "failover",<br>
+                only that part of the connection should be blocked so that the existing server can continue to run.</p>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jun Sik's CV!</h1>
+        <img src="jerry_hi.gif" width="300" height="200" alt="Jerry is welcoming you">
+        <hr>
+    </header>
+    <nav>
+        <ul class="nav_bar">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul><hr>
+    </nav>
+    <main>
+        <h2>My Information</h2>
+        <h3>My Name / English name</h3>
+        <p>Jun Sik Kang / Tony Kang</p>
+        <h3>Email Address</h3>
+        <p>lgtwins0302@gmail.com</p>
+        <h3>Phone Number</h3>
+        <p>0976214772</p>
+        <h3>Address</h3>
+        <p>78-80-82 Hoàng Hoa Thám, Phường 12, Quận Tân Bình</p>
+        <h3>Educational Background</h3>
+        <table>
+            <caption><em>Educational Background</em></caption>
+           <thead>
+               <th>Period</th>
+               <th>School Name</th>
+               <th>Major</th>
+               <th>Graduation Status</th>
+           </thead>
+           <tbody>
+                <tr>
+                    <td>2007 - 2012</td>
+                    <td>Dong In Elementary School</td>
+                    <td></td>
+                    <td>Graduated</td>
+                </tr>
+                <tr>
+                    <td>2013 - 2017</td>
+                    <td>Panyathip International School</td>
+                    <td></td>
+                    <td>Graduated</td>
+                </tr>
+                <tr>
+                    <td>2017 - 2018</td>
+                    <td>ABAC University</td>
+                    <td>Computer Science</td>
+                    <td>Drop Out</td>
+                </tr>
+                <tr>
+                    <td>2021 - 2024</td>
+                    <td>RMIT University</td>
+                    <td>Information Technology</td>
+                    <td>Graduated</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Projects</h3>
+        <p>You can check all my done projects on <a href="projects.html">here</a>.</p><hr>
+    </main>
+    <aside>
+        <h2>Survey</h2>
+        <form method="get" action="cv.html" enctype="multipart/form-data">
+            <label for="email_address">What is your email address?</label><br>
+            <input type="email" id="email_address" name="email_ad" placeholder="Enter your email"><br><br>
+            <label>What is your gender?</label><br>
+            <input type="radio" id="male" name="gender" value="M"><label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="F"><label for="female">Female</label><br><br>
+            <label for="satisfy">Do you satisfy with my cv?</label><br>
+            <select id="satisfy" name="satisfied">
+                <option value="1">Extremely Satisfied</option>
+                <option value="2">Very Satisfied</option>
+                <option value="3">Neutral</option>
+                <option value="4">Slightly Satisfied</option>
+                <option value="5">Not at all Satisfied</option>
+            </select><br><br>
+            <label for="opinion">Leave your comment!</label><br>
+            <textarea name="comment" id="opinion" cols="30" rows="5"></textarea><br><br>
+            <label for="pic">...with cute animal picture!</label><br>
+            <input type="file" id="pic" name="cute_pic"><br><br>
+            <input type="submit">
+        </form>
+        <br><hr>
+    </aside>
+    <footer>
+        <a href="contact_me.html">contact me</a>
+    </footer>
+</body>
+</html>
